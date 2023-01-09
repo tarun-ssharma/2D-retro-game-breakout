@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>blue wanderer's breakout 2D</title>
+    <link rel="stylesheet" href="index.css"></link>
+  </head>
+  <body>
+    <div class="sound">
+      <img src="assets/SOUND_ON.png" alt="mute button" id="sound" onclick="muteUnmute()">
+      <img src="assets/PAUSE.png" alt="pause button" id="pause" onclick="pausePlay()">
+    </div>
+    <div id="gameover" width="640px" height="480px">
+        <img src="https://raw.githubusercontent.com/CodeExplainedRepo/2D-Breakout-Game-JavaScript/master/2D%20Breakout%20Game%20JavaScript%20-%20FULL%20GAME/img/youwon.png" alt="" id="youwon">
+        <img src="https://raw.githubusercontent.com/CodeExplainedRepo/2D-Breakout-Game-JavaScript/master/2D%20Breakout%20Game%20JavaScript%20-%20FULL%20GAME/img/gameover.png" alt="" id="youlose">
+        <div id="restart" onclick="restartGame()">Play Again!</div>
+    </div>
+    <canvas id="breakout" width="640px" height="480px">
+      <!-- https://stackoverflow.com/questions/8696631/canvas-drawings-like-lines-are-blurry -->
+    </canvas>
+     <script src="index.js"></script> <!--http://net-informations.com/js/iq/error.htm-->
+  </body>
+</html>
